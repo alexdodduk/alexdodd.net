@@ -1,0 +1,131 @@
+﻿html {
+  background-color: #e6e9e9;
+  background-image: -webkit-linear-gradient(270deg, #e6e9e9 0, #d8dddd 100%);
+  background-image: linear-gradient(270deg, #e6e9e9 0, #d8dddd 100%);
+  -webkit-font-smoothing: antialiased;
+}
+html body {
+  margin: 0 auto;
+  padding: 1em 2em 2em;
+  max-width: 800px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #545454;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+  color: #222;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin: 0;
+}
+html body h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 8em;
+  font-weight: 400;
+  float: left;
+}
+html body h2 {
+  color: #545454;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+html body h3 {
+  color: #BABABA;
+  font-weight: 700;
+  font-size: 0.8em;
+  line-height: 1.9em;
+}
+html body a {
+  text-decoration: none;
+  color: #545454;
+}
+html body a:hover {
+  text-decoration: underline;
+}
+html body a h2 {
+  line-height: 1.5em;
+  font-size: 1.8em;
+}
+html body #contact {
+  margin: 0.8em 1em 1.5em;
+  display: inline-block;
+  float: left;
+}
+html body td {
+  vertical-align: top;
+}
+html body td:nth-child(1) {
+  width: 15%;
+}
+html body td:nth-child(2) {
+  width: 21%;
+}
+html body section {
+  margin-bottom: 1em;
+}
+html body table {
+  width: 100%;
+}
+html body .label {
+  text-align: right;
+}
+html body .value {
+  padding-left: 1em;
+  font-size: 0.8em;
+}
+html body #employment .label h3,
+html body #employment .label a {
+  color: #01FF70;
+}
+html body #experience .label h3,
+html body #experience .label a {
+  color: #39CCCC;
+}
+html body #freelance .label h3,
+html body #freelance .label a {
+  color: #7FDBFF;
+}
+html body #skills .label h3,
+html body #skills .label a {
+  color: #FFDC00;
+}
+html body #education .label h3,
+html body #education .label a {
+  color: #FF4136;
+}
+html body footer {
+  text-align: center;
+}
+html body footer a {
+  color: #BABABA;
+  display: inline-block;
+  margin: 0 1em;
+}
+html body footer a h3 {
+  font-size: 0.85em;
+}
+@media print {
+  body {
+    padding-bottom: 0;
+  }
+  body h1 {
+    font-size: 3em;
+  }
+  body a h2 {
+    margin-top: -0.45em;
+    font-size: 1.35em;
+    line-height: 2em;
+  }
+  body footer a h3 {
+    font-size: 0.61em;
+  }
+}
+/*# sourceMappingURL=CV.css.map */

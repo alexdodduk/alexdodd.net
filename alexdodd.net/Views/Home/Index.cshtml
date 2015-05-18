@@ -1,0 +1,24 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ALEXDODD.NET</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Fjalla+One' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/bundles/styles")
+    <meta name="description" content="Alex Dodd's attempt at a portfolio..." />
+</head>
+<body>
+    <h1>ALEXDODD.NET</h1>
+    @{ Html.RenderAction("SignUp"); }
+    @{ Html.RenderAction("SignUpNotification"); }
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/app")
+</body>
+</html>

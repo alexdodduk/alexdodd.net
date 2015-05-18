@@ -1,0 +1,15 @@
+﻿@model alexdodd.net.ViewModels.SignUpNotification
+
+@if (Model != null)
+{
+    if (Model.NonUniqueEmail != null)
+    {
+        <p class="text-danger">@Model.NonUniqueEmail has already signed up!</p>
+    }
+
+    if (Model.UniqueEmail != null)
+    {
+        <p>@Model.UniqueEmail has been added to the list!</p>
+        <p>While you wait for the site to be finished why don't you <a href="https://www.youtube.com/results?search_query=vine+compilations">watch all of these videos?</a></p>
+    }
+}

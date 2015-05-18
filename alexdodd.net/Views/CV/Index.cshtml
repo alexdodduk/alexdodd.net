@@ -1,0 +1,157 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Curriculum Vitae</title>
+    <meta name="description" content="Alex Dodd's Curriculum Vitae">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Fjalla+One' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/bundles/CV")
+</head>
+<body>
+    <h1>ALEX DODD</h1>
+    <section id="contact">
+        <a href="tel:07517412280"><h2>07517412280</h2></a>
+        <a href="http://www.alexdodd.net"><h2>www.alexdodd.net</h2></a>
+        <a href="mailto:hello@alexdodd.net"><h2>hello@alexdodd.net</h2></a>
+    </section>
+    <section id="employment">
+        <table>
+            <tr>
+                <td>
+                    <h3>EMPLOYMENT</h3>
+                </td>
+                <td class="label">
+                    <h3>FEBRUARY 2013 - PRESENT</h3>
+                    <a href="http://www.geeks.ltd.uk/"><h3>Geeks LTD</h3></a>
+                </td>
+                <td class="value">
+                    Web developer involved with multiple projects from the analysis stage through to product delivery and maintenence. Worked with clients such as the BBC, HMV and the Westminster City Council.
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="experience">
+        <table>
+            <tr>
+                <td>
+                    <h3>EXPERIENCE</h3>
+                </td>
+                <td class="label">
+                    <h3>2015</h3>
+                    <h3>Jacada Travel</h3>
+                </td>
+                <td class="value">
+                    Developing a back end system for processing bookings using a RESTful API that integrates with their current Drupal database.
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="label">
+                    <h3>2014</h3>
+                    <a href="http://www.gcrebid.com/"><h3>GCReBID.com</h3></a>
+                </td>
+                <td class="value">
+                    Created a new platform for insurance reselling. Focused on the UX to compliment a completely new way for brokers to manage the buying and selling of insurance policies.
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="label">
+                    <h3>2014</h3>
+                    <a href="http://www.jabet.com/"><h3>JABET.com</h3></a>
+                </td>
+                <td class="value">
+                    Developed a betting platform with an integrated WorldPay payment gateway and realtime databinding using knockout.js for updating odds.
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="label">
+                    <h3>2013</h3>
+                    <a href="https://purehmv.com/"><h3>PureHMV.com</h3></a>
+                </td>
+                <td class="value">
+                    Built the new loyalty rewards platform for HMV. E-Commerce and subscription orientated development.
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="freelance">
+        <table>
+            <tr>
+                <td>
+                    <h3>FREELANCE</h3>
+                </td>
+                <td class="label">
+                    <a href="http://www.the-dit.com/"><h3>the-dit.com</h3></a>
+                </td>
+                <td class="value">
+                    A portfolio built using MVC. Also includes a handbuilt CMS that allows the managing every aspect of all public-facing pages including the projects, kit hire, contact info and CV.
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="skills">
+        <table>
+            <tr>
+                <td>
+                    <h3>SKILLS</h3>
+                </td>
+                <td class="label">
+                    <h3>LANGUAGES</h3>
+                </td>
+                <td class="value">
+                    C#, ASP.NET (Webforms and MVC), HTML, CSS, LESS, JavaScript, jQuery, TypeScript, SQL. Massive advocate for TDD.
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="label">
+                    <h3>SOFTWARE</h3>
+                </td>
+                <td class="value">
+                    Grew up with Windows, recently invested in OSX, dabbled in Linux.<br />
+                    Visual Studio for development, Brackets for playing. IIS, nginx, MS Server Management Studio, SourceTree for GIT based source control. Web optimisation done using Fiddler.
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="education">
+        <table>
+            <tr>
+                <td>
+                    <h3>EDUCATION</h3>
+                </td>
+                <td class="label">
+                    <h3>2008-2011</h3>
+                </td>
+                <td class="value">
+                    BSc (Hons) Music and Audio Technology<br />
+                    Bournemouth University
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="interests">
+        <table>
+            <tr>
+                <td>
+                    <h3>INTERESTS</h3>
+                </td>
+                <td class="label"></td>
+                <td class="value">
+                    Live music, football, basketball, breaking myself over a skateboard and vine compilations!
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <a href="https://github.com/bluntfakie"><h3>GitHub.com/bluntfakie</h3></a>
+        <a href="http://jsfiddle.net/user/bluntfakie/fiddles/"><h3>JSFiddle.net/user/bluntfakie</h3></a>
+        <a href="https://www.linkedin.com/in/bluntfakie"><h3>LinkedIn.com/in/bluntfakie</h3></a>
+    </footer>
+</body>
+</html>

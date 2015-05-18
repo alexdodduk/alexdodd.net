@@ -1,0 +1,17 @@
+﻿@model alexdodd.net.Models.EmailSignUp
+
+@if (Model != null)
+{
+    <p>...is nowhere near ready yet!</p>
+    <p>But enter your email address and I'll let you know when it's finished!</p>
+    using (Html.BeginForm("SignUp", "Home"))
+    {
+        @Html.AntiForgeryToken()
+        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @placeholder = "your@email.com", @autofocus = true } })
+    
+        <input type="submit" value="Sign up" />
+
+        @Html.ValidationSummary(true, "That... doesn't look like an email address. Try adding an '@' or two", new { @class = "text-danger" })
+        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+    }
+}
