@@ -1,5 +1,6 @@
 ﻿@White: snow;
-@Black: #232323;
+@Grey: #EFEFEF;
+@Black: #474747;
 @SuperGreen: rgb(19, 231, 183);
 @SuperBlueLight: rgb(45, 207, 228);
 @SuperBlueDark: rgb(45, 193, 228);
@@ -16,12 +17,28 @@ body {
         font-size: 6em;
         font-family: 'Fjalla One', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
         color: @White;
-        text-shadow: 5px 7px #13E7B7;
+        text-shadow: 5px 7px @SuperGreen; //#13E7B7;
         margin: 0.3em 0 0.1em;
+    }
+
+    p {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:last-of-type {
+            margin-bottom: 2em;
+        }
     }
 
     form {
         margin-top: 2.5em;
+        width: 800px;
+        margin: auto;
+        box-shadow: 2px 2px @SuperGreen;
+        background: @White;
+        padding: 2em 0 1em;
+        border-radius: 3px;
 
         input {
             font-size: 1.5em;
@@ -35,12 +52,11 @@ body {
             }
 
             &[type=email] {
-                background: rgba(255,255,255,0.5);
-                box-shadow: inset 0 1px 2px rgba(0,0,0,0.6);
+                background: @Grey;
                 border-radius: 5px 0 0 5px;
 
                 &:focus {
-                    box-shadow: inset 0 1px 2px rgba(0,0,0,.6), 0 0 3px 3px rgba(45,193,228,.7);
+                    box-shadow: 0 0 0 2px @SuperGreen; //rgba(45,193,228,.3);
                 }
             }
 
@@ -57,7 +73,7 @@ body {
                 }
 
                 &:focus {
-                    box-shadow: 0 0 3px 3px rgba(45,193,228,.7);
+                    box-shadow: 0 0 0 2px @SuperGreen; //rgba(45,193,228,.3);
                 }
 
                 &:active {
@@ -76,19 +92,33 @@ body {
     }
 }
 
-@media only screen and (max-width: 568px) {
+@media screen and (max-width: 568px) {
     body {
         font-size: 18px;
 
         h1 {
             font-size: 2.8em;
+            text-shadow: 2px 4px @SuperGreen;
+        }
+
+        p {
+            font-size: 16px;
+            
+            &:last-of-type {
+                margin-bottom: 1em;
+            }
         }
 
         form {
             margin-top: 0;
+            width: 290px;
 
             input {
                 font-size: 1em;
+
+                &[type=email] {
+                    width: 120px;
+                }
             }
         }
     }
