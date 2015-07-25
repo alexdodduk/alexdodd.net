@@ -78,11 +78,11 @@ namespace alexdodd.net.Controllers
             return View(emailSignUp);
         }
 
-        public ActionResult List()
-        {
-            var emailSignUps = db.EmailSignUps;
+        //public ActionResult List()
+        //{
+        //    var emailSignUps = db.EmailSignUps;
 
-            return View(emailSignUps);
-        }
+        //    return View(emailSignUps);
+        //}
     }
 }
